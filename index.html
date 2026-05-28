@@ -16,53 +16,89 @@ body {
     color: #2c3e50;
 }
 
+/* HEADER */
 .header {
     background-color: #eaf1f4;
-    padding: 25px 15px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 .header h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    margin: 0;
 }
 
+/* INTRO */
 .intro {
     background: #dfe6ea;
-    padding: 15px;
-    font-size: 14px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
+/* CONTAINER */
 .container {
-    padding: 15px;
+    padding: 20px;
 }
 
+/* BLOCK TEXT */
 .text-block {
-    margin-bottom: 20px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
+/* TITLE */
 .diff-title {
     text-align: center;
     font-weight: 600;
     color: #5f9fb8;
-    margin: 20px 0;
+    margin: 30px 0 15px;
 }
 
+/* IMAGE */
 .schema {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .schema img {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
 }
 
+/* COLUMNS */
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    font-size: 14px;
+    color: #5f9fb8;
+    line-height: 1.6;
+}
+
+/* CONCLUSION */
 .conclusion {
     background: #dfe6ea;
-    padding: 15px;
+    padding: 20px;
     font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FOOTNOTE */
+.note {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
 }
 </style>
 
@@ -70,20 +106,17 @@ body {
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
     <h1>Notre CO₂ vérifié à faible empreinte carbone</h1>
 </div>
 
+<!-- INTRO -->
 <div class="intro">
-    <p>
-    Réduire l’usage des bouteilles en plastique à usage unique est devenu une priorité majeure.
-    Dans cette dynamique, une nouvelle offre de CO₂ vérifié à faible empreinte carbone voit le jour, portée par des leviers concrets et une ambition claire : limiter les émissions à chaque étape du cycle de vie du produit.​
-    </p>
-    <p>
-    Découvrez les leviers concrets qui rendent ce CO₂ possible : tout commence avec une ambition « zéro émission ».
-    </p>
+    Réduire l’usage des bouteilles en plastique à usage unique est devenu une priorité majeure. Dans cette dynamique, une nouvelle offre de CO₂ vérifié à faible empreinte carbone voit le jour, portée par des leviers concrets et une ambition claire : limiter les émissions à chaque étape du cycle de vie du produit.
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
     <div class="text-block">
@@ -94,34 +127,46 @@ body {
         </p>
 
         <p>
-        Enfin, le CO₂ liquide est transporté vers notre entrepôt grâce à une logistique optimisée et une part croissante de carburants alternatifs. L'empreinte carbone réduite du CO2 (depuis la source jusqu’à notre fournisseur) est vérifiée par un organisme tiers indépendant selon la norme ISO 14067.​
+        Enfin, le CO₂ liquide est transporté vers notre entrepôt grâce à une logistique optimisée et une part croissante de carburants alternatifs.  
+        L’empreinte carbone réduite du CO₂ (depuis la source jusqu’à notre fournisseur) est vérifiée par un organisme tiers indépendant selon la norme ISO 14067.
         </p>
     </div>
 
+    <!-- TITLE -->
     <div class="diff-title">
-        Différence entre le CO₂ à faible empreinte carbone et le CO₂ standard
+        Différence entre le CO₂ vérifié à faible empreinte carbone et le CO₂ standard
     </div>
 
+    <!-- IMAGE -->
     <div class="schema">
         <img src="https://i.postimg.cc/gJRD6Y9C/schema-co2.jpg" alt="Schéma CO2">
     </div>
-    
- <div class="text-block">
-        <p>
-        Le CO₂ vérifié à faible empreinte carbone provient de processus naturels comme la fermentation végétale. Il s’inscrit dans un cycle du carbone court et n’augmente donc pas la quantité de carbone présente dans l’atmosphère.​
-        </p>
-      <p>
-        Le CO₂ standard provient de sources fossiles et introduit du carbone additionnel dans l’atmosphère via un cycle linéaire, non renouvelable.​
-        </p>
 
-     *Sur la base d’un modèle de bilan massique​
+    <!-- 2 COLONNES -->
+    <div class="columns">
+
+        <div class="col">
+            Le CO₂ vérifié à faible empreinte carbone provient de processus naturels comme la fermentation végétale.  
+            Il s’inscrit dans un cycle du carbone court et n’augmente donc pas la quantité de carbone présente dans l’atmosphère.
+        </div>
+
+        <div class="col">
+            Le CO₂ standard provient de sources fossiles et introduit du carbone additionnel dans l’atmosphère via un cycle linéaire, non renouvelable.
+        </div>
+
+    </div>
+
+    <!-- NOTE -->
+    <div class="note">
+        *Sur la base d’un modèle de bilan massique
+    </div>
+
 </div>
 
+<!-- CONCLUSION -->
 <div class="conclusion">
-    <p>
-    Notre CO₂ vérifié à faible empreinte carbone s’inscrit donc dans le cycle naturel du carbone : il est absorbé par les plantes durant leur croissance, puis libéré lors de leur décomposition, sans dépasser la quantité initialement stockée.
-        ​Cela en fait une alternative plus durable au CO₂ d’origine fossile pour les machines à eau pétillante, tout en garantissant à nos consommateurs la même qualité de boissons gazeuses et une utilisation toujours aussi simple.​
-    </p>
+    Notre CO₂ vérifié à faible empreinte carbone s’inscrit dans le cycle naturel du carbone : il est absorbé par les plantes durant leur croissance, puis libéré lors de leur décomposition, sans dépasser la quantité initialement stockée.  
+    Cela en fait une alternative plus durable au CO₂ d’origine fossile pour les machines à eau pétillante, tout en garantissant à nos consommateurs la même qualité de boissons gazeuses et une utilisation toujours aussi simple.
 </div>
 
 </body>
